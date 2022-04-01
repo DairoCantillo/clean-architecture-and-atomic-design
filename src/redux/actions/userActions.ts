@@ -1,9 +1,8 @@
 import { ActionType } from "../types/userTypes";
 import { IUserState } from '../reducers/userReducer';
 
-export const getUser = (payload: IUserState) => ({
+export const getUser = () => ({
   type: ActionType.ADD_USER,
-  payload: payload,
 });
 export const getUserSuccess = (user: IUserState) => ({
   type: ActionType.ADD_USER_SUCCESS,

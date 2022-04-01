@@ -16,7 +16,7 @@ const UserInitialState: IUserState = {
 export const userReducer = (state = UserInitialState, action: Action) => {
   switch (action.type) {
     case ActionType.ADD_USER:
-      return { ...state, isLoading: action.payload };
+      return { ...state, isLoading: true };
     case ActionType.ADD_USER_SUCCESS:
       return {
         ...state,
